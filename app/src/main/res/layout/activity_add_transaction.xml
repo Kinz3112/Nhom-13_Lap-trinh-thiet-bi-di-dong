@@ -1,110 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="THÊM GIAO DỊCH"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp"/>
-
-    <EditText
-        android:id="@+id/etTitle"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tên giao dịch (VD: Ăn trưa)"/>
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <EditText
-        android:id="@+id/etAmount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Số tiền"
-        android:inputType="number"
-        android:layout_marginTop="10dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Loại giao dịch:"
-        android:layout_marginTop="15dp"/>
-
-    <RadioGroup
-        android:id="@+id/rgType"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioButton
-            android:id="@+id/rbExpense"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chi tiêu (Expense)"
-            android:checked="true"/>
-        <RadioButton
-            android:id="@+id/rbIncome"
+            android:text="THÊM GIAO DỊCH"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên giao dịch (VD: Ăn trưa)"/>
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số tiền"
+            android:inputType="number"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thu nhập (Income)"/>
-    </RadioGroup>
+            android:text="Loại giao dịch:"
+            android:layout_marginTop="15dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Danh mục:"
-        android:layout_marginTop="15dp"/>
+        <RadioGroup
+            android:id="@+id/rgType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi tiêu (Expense)"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rbIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu nhập (Income)"/>
+        </RadioGroup>
 
-    <Spinner
-        android:id="@+id/spCategory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:minHeight="48dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh mục:"
+            android:layout_marginTop="15dp"/>
 
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:minHeight="48dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ngày giao dịch:"
-        android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày giao dịch:"
+            android:layout_marginTop="15dp"/>
 
-    <TextView
-        android:id="@+id/tvSelectedDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="12dp"
-        android:text="Chọn ngày..."
-        android:textSize="16sp"
-        android:background="@android:drawable/editbox_background"
-        android:drawableEnd="@android:drawable/ic_menu_my_calendar"
-        android:layout_marginTop="5dp"
-        android:clickable="true"
-        android:focusable="true"/>
-    <Button
-        android:id="@+id/btnPickImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chọn ảnh hóa đơn"
-        android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Chọn ngày..."
+            android:textSize="16sp"
+            android:background="@android:drawable/editbox_background"
+            android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"/>
 
-    <ImageView
-        android:id="@+id/ivPreview"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        android:background="#F5F5F5"
-        android:scaleType="fitCenter"
-        android:visibility="visible" />
-    <Button
-        android:id="@+id/btnSave"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LƯU GIAO DỊCH"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/design_default_color_primary"/>
+        <Button
+            android:id="@+id/btnPickImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn ảnh hóa đơn"
+            android:layout_marginTop="10dp"/>
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/ivPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#F5F5F5"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LƯU GIAO DỊCH"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/design_default_color_primary"/>
+
+    </LinearLayout>
+</ScrollView>
