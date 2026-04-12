@@ -22,7 +22,7 @@ Một ứng dụng Android giúp người dùng ghi chép, theo dõi và quản 
 **Bước 1: Tải mã nguồn**
 * Nhấn vào nút xanh `<> Code` góc trên bên phải trang này.
 * Chọn **Download ZIP** và giải nén ra máy tính của bạn.
-* (Hoặc) Clone repository này qua link: `https://github.com/HoangBaNgoc/Quan_ly_chi_tieu_N13.git`
+* (Hoặc) Clone repository này qua link: `[https://github.com/HoangBaNgoc/Quan_ly_chi_tieu_N13.git](https://github.com/Kinz3112/Nhom-13_Lap-trinh-thiet-bi-di-dong)`
 
 **Bước 2: Mở dự án trong Android Studio**
 * Khởi động **Android Studio**.
