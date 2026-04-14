@@ -15,7 +15,7 @@ Một ứng dụng Android giúp người dùng ghi chép, theo dõi và quản 
 * **Cơ sở dữ liệu:** Room Database (SQLite)
 * **Khác:** Giao diện Material Design, Notification API, Intent.
 
-## 🚀 Hướng dẫn cài đặt (Dành cho Giảng viên chấm thi)
+## 🚀 Hướng dẫn cài đặt
 
 Để chạy dự án này trên máy cá nhân, vui lòng làm theo các bước sau:
 
